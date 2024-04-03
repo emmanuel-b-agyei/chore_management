@@ -1,0 +1,200 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.container header h1 { 
+  color: #673ab7;
+}
+
+.admin-overview,
+.admin-actions,
+.recent-admin-activity,
+.suggested-admin-actions {
+  margin-top: 30px;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  color: red;
+  margin-bottom: 8px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.stat-box:hover {
+  background-color: #f0f0f0;
+  text-decoration: underline;
+  text-decoration-color: #673ab7;
+}
+
+.stat-box p {
+  color:#673ab7;
+  font-size: 18px;
+}
+
+.admin-specific-content,
+.suggested-admin-actions {
+  margin-top: 30px;
+}
+
+.admin-specific-content h3,
+.suggested-admin-actions h2 {
+  color: #333;
+}
+
+.admin-specific-content p {
+  color: #666;
+}
+
+.admin-actions button {
+  width: 100%;
+  padding: 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-actions button:hover {
+  background-color: #2980b9;
+}
+
+.recent-admin-activity ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recent-admin-activity li {
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.suggested-admin-actions button {
+  width: 100%;
+  padding: 15px;
+  background-color: #673ab7;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.suggested-admin-actions button:hover {
+  background-color: #c0392b;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 2;
+  position: static;
+}
+
+.sidebar button:hover {
+  background-color: #673ab7;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #3498db;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar-button:hover {
+  background-color: #444;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: underline;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: red;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  position: static;
+  z-index: 2;
+  margin-left: 10px;
+  margin-top: 10px; 
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
