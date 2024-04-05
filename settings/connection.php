@@ -1,7 +1,7 @@
 <?php
 // Check if the constants are not defined before defining them
 if (!defined('DB_HOST')) {
-    define('DB_HOST', 'localhost');
+    define('DB_HOST', 'chef-api-assignment-server.mysql.database.azure.com');
 }
 
 if (!defined('DB_USER')) {
