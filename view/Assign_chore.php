@@ -11,7 +11,7 @@
   <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <button onclick="navigateToPage('home_view.php')">Dashboard</button>
-    <button onclick="navigateToPage('manage_chore.html')">Manage Chores</button>
+    <button onclick="navigateToPage('manage_chore.php')">Manage Chores</button>
     <button onclick="navigateToPage('Add_chore.php')">Add Chore</button>
     <button onclick="navigateToPage('Assign_chore.php')">Assign Chore</button>
     <button onclick="navigateToPage('deadline_tracker.html')">Deadline Tracker</button>

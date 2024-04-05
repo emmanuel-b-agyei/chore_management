@@ -1,9 +1,4 @@
-<!-- home_view.php -->
-<?php
-include_once '../action/get_all_assignment_action.php'; // Include the get_all_assignment_action.php file
-include_once '../functions/home_fxn.php'; // Include the home_fxn.php file
-?>
-
+<!-- welcome.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +6,7 @@ include_once '../functions/home_fxn.php'; // Include the home_fxn.php file
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chore Management System - Welcome</title>
   <link rel="stylesheet" href="../css/Welcome_page.css">
+
 </head>
 <body>
   <div id="mySidebar" class="sidebar">
@@ -34,58 +30,39 @@ include_once '../functions/home_fxn.php'; // Include the home_fxn.php file
         <h1>Welcome to the Chore Management System</h1>
       </header>
 
-      <!-- Display chore assignment statistics -->
-      <?php
-      // Call the necessary functions to get the data for statistics
-      $assignments = getAllAssignments($conn); // Function already exists, no need to repeat
-      $inProgressAssignments = getInProgressAssignments($conn);
-      $incompleteAssignments = getIncompleteAssignments($conn);
-      $completedAssignments = getCompletedAssignments($conn);
-      $recentAssignments = getRecentAssignments($conn);
-      ?>
-
       <section class="statistics-section">
         <div class="stat-box" onclick="navigateToPage('manage_chore.html')">
           <h3>Total Chores</h3>
-          <p><?php echo count($assignments); ?></p>
+          <p>100</p>
         </div>
         <div class="stat-box" onclick="navigateToPage('manage_chore.html')">
           <h3>In Progress</h3>
-          <p><?php echo count($inProgressAssignments); ?></p>
+          <p>50</p>
         </div>
         <div class="stat-box" onclick="navigateToPage('manage_chore.html')">
           <h3>Incomplete</h3>
-          <p><?php echo count($incompleteAssignments); ?></p>
+          <p>20</p>
         </div>
         <div class="stat-box" onclick="navigateToPage('manage_chore.html')">
           <h3>Completed</h3>
-          <p><?php echo count($completedAssignments); ?></p>
+          <p>30</p>
         </div>
       </section>
 
       <section class="additional-content">
         <h2>Recent Activity</h2>
-        <ul>
-          <?php
-          // Example recent activity items (replace with actual recent activity data)
-          $recentActivity = array(
-            "Assigned 'Clean the Living Room' to John Doe",
-            "Marked 'Wash Dishes' as completed",
-            "Assigned 'Take out the Trash' to Jane Doe"
-          );
-
-          foreach ($recentActivity as $activity) {
-            echo "<li>$activity</li>";
-          }
-          ?>
-        </ul>
+      <ul>
+        <li>Assigned "Clean the Living Room" to John Doe</li>
+        <li>Marked "Wash Dishes" as completed</li>
+        <li>Assigned "Take out the Trash" to Jane Doe</li>
+      </ul>
       </section>
 
       <section class="suggested-actions">
         <h2>Suggested Actions</h2>
-        <p>Explore the Chore Management System and stay organized with your household tasks!</p>
-        <button onclick="navigateToPage('manage_chore.html')">View Chores</button>
-        <button onclick="navigateToPage('assign_chore.php')">Assign Chores</button>
+      <p>Explore the Chore Management System and stay organized with your household tasks!</p>
+      <button onclick="navigateToPage('manage_chore.html')">View Chores</button>
+      <button onclick="navigateToPage('assign_chore.php')">Assign Chores</button>
       </section>
     </div>
   </div>

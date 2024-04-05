@@ -1,7 +1,6 @@
 <?php
 session_start();
 include '../settings/connection.php';
-include_once '../view/access_control.php';
 
 if (isset($_POST['email']) && isset($_POST['password'])) {
     $email = $_POST['email'];
