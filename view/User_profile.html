@@ -1,0 +1,54 @@
+<!-- user_profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile - Chore Management System</title>
+  <link rel="stylesheet" href="../css/User_profile.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>User Profile</h1>
+    </header>
+
+    <section class="user-profile-info">
+      <h2>Profile Information</h2>
+      <div class="user-details">
+        <p><strong>Name:</strong> Emmanuel Brewu Agyei</p>
+        <p><strong>Email:</strong> emmanuel.agyei@ashesi.edu.gh</p>
+        <p><strong>Family Role:</strong> Father</p>
+      </div>
+    </section>
+
+    <section class="change-password">
+      <h2>Change Password</h2>
+      <form id="changePasswordForm">
+        <label for="currentPassword">Current Password:</label>
+        <input type="password" id="currentPassword" name="currentPassword" required>
+
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" name="newPassword" required>
+
+        <label for="confirmNewPassword">Confirm New Password:</label>
+        <input type="password" id="confirmNewPassword" name="confirmNewPassword" required>
+
+        <button type="submit">Change Password</button>
+      </form>
+    </section>
+
+    <section class="delete-account">
+      <h2>Delete Account</h2>
+      <form id="deleteAccountForm">
+        <label for="deleteConfirmation">Type "DELETE" to confirm:</label>
+        <input type="text" id="deleteConfirmation" name="deleteConfirmation" required>
+
+        <button type="submit">Delete Account</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="User_profile.js"></script>
+</body>
+</html>
