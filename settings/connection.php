@@ -1,19 +1,23 @@
 <?php
 // Check if the constants are not defined before defining them
-if (!defined('DB_HOST')) {
-    define('DB_HOST', 'localhost');
+if (!defined('AZURE_MYSQL_HOST')) {
+    define('AZURE_MYSQL_HOST', 'chef-api-assignment-server.mysql.database.azure.com');
 }
 
-if (!defined('DB_USER')) {
-    define('DB_USER', 'root');
+if (!defined('AZURE_MYSQL_USERNAME')) {
+    define('AZURE_MYSQL_USERNAME', 'root');
 }
 
-if (!defined('DB_PASSWORD')) {
-    define('DB_PASSWORD', '');
+if (!defined('AZURE_MYSQL_PASSWORD')) {
+    define('AZURE_MYSQL_PASSWORD', '');
 }
 
-if (!defined('DB_NAME')) {
-    define('DB_NAME', 'chores_mgt');
+if (!defined('AZURE_MYSQL_DBNAME')) {
+    define('AZURE_MYSQL_DBNAME', 'chores_mgt');
+}
+
+if (!defined('DB_PORT')) {
+    define('AZURE_MYSQL_PORT', '3306');
 }
 
 // Establish a database connection using the defined constants
