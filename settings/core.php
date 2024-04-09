@@ -7,17 +7,3 @@ function checkLogin() {
         exit(); 
     }
 }
-
-function checkRoleAccess($allowedRoles) {
-    if (!isset($_SESSION['role_id'])) {
-        header("Location: Login_view.php");
-        exit();
-    }
-
-    $userRole = $_SESSION['role_id'];
-    if (!in_array($userRole, $allowedRoles)) {
-        header("Location: home_view.php");
-        exit();
-    }
-}
-?>
